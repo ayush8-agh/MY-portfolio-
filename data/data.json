@@ -1,0 +1,227 @@
+{
+  "personal": {
+    "name": "Ayush Trivedi",
+    "tagline": "Mechanical Engineer & Robotics Enthusiast",
+    "roles": [
+      "Robotics Engineer",
+      "CAD Designer",
+      "FEA Analyst",
+      "Python Developer",
+      "Automation Engineer"
+    ],
+    "bio": "Passionate Mechanical Engineer with hands-on experience in CAD design, FEA simulation, robotics development, and manufacturing. Proficient in SolidWorks, Fusion 360, ABAQUS, and MATLAB, with projects spanning autonomous systems, smart devices, and robotic platforms. Currently exploring autonomous robotics, advanced simulation, and AI-driven mechanical systems.",
+    "phone": "+91 XXXXXXXXXX",
+    "email": "ayushtrivedi262005@gmail.com",
+    "city": "India",
+    "github": "https://github.com/ayush8-agh",
+    "linkedin": "https://www.linkedin.com/in/ayushtrivedi26/",
+    "avatar": "profile_avatar.png"
+  },
+
+  "education": [
+    {
+      "degree": "B.E. in Mechanical Engineering",
+      "institution": "Your University",
+      "duration": "2022 – Present",
+      "coursework": [
+        "CAD Design (SolidWorks, Fusion 360)",
+        "Finite Element Analysis (FEA / ABAQUS)",
+        "MATLAB Programming for Industry 4.0",
+        "Robotics & Automation Systems",
+        "Thermodynamics & Fluid Mechanics"
+      ]
+    },
+    {
+      "degree": "Secondary & Higher Secondary",
+      "institution": "Your School",
+      "duration": "2019 – 2021",
+      "coursework": [
+        "Physics, Chemistry, Mathematics",
+        "Computer Science"
+      ]
+    }
+  ],
+
+  "certifications": [
+    {
+      "title": "Multi-Axis CNC Toolpaths",
+      "issuer": "Coursera / Autodesk",
+      "link": ""
+    },
+    {
+      "title": "Modeling & Design with Autodesk Fusion 360",
+      "issuer": "Coursera / Autodesk",
+      "link": ""
+    },
+    {
+      "title": "CAM and Design Manufacturing with Fusion 360",
+      "issuer": "Coursera / Autodesk",
+      "link": ""
+    },
+    {
+      "title": "Simulation Analysis with Autodesk Fusion 360",
+      "issuer": "Coursera / Autodesk",
+      "link": ""
+    },
+    {
+      "title": "Introduction to Mechanical Engineering Design",
+      "issuer": "Coursera / Autodesk",
+      "link": ""
+    },
+    {
+      "title": "MATLAB Programming for Engineers and Scientists",
+      "issuer": "Coursera",
+      "link": ""
+    },
+    {
+      "title": "Raspberry Pi Platform and Python Programming",
+      "issuer": "Coursera",
+      "link": ""
+    },
+    {
+      "title": "Robotics: Aerial Robotics",
+      "issuer": "Coursera / UPenn",
+      "link": ""
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "E-Yantra 2024",
+      "role": "Python Developer",
+      "duration": "Sep 2024 – Dec 2024",
+      "logo": "",
+      "certificate": "",
+      "description": [
+        "Designed, tested, and developed an autonomous self-balancing bot targeting Industry 4.0 applications.",
+        "Implemented image processing pipelines and ran simulations on CoppeliaSim.",
+        "Deployed and tested the system on Linux environment."
+      ],
+      "tags": ["Python", "Robotics", "CoppeliaSim", "Image Processing"]
+    },
+    {
+      "company": "Smart India Hackathon 2023",
+      "role": "CAD & Circuit Designer",
+      "duration": "Aug 2023 – Nov 2023",
+      "logo": "",
+      "certificate": "",
+      "description": [
+        "Participated in SIH 2023 as team member on an IoT-based problem statement.",
+        "Designed the product enclosure using CAD software.",
+        "Integrated circuit design for amalgamating multiple IoT devices."
+      ],
+      "tags": ["CAD", "IoT", "Circuit Design", "SolidWorks"]
+    },
+    {
+      "company": "Robotics Team / Club",
+      "role": "Robotics Developer",
+      "duration": "Jan 2023 – Present",
+      "logo": "",
+      "certificate": "",
+      "description": [
+        "Led and contributed to robotics development projects for nationwide competitions.",
+        "Developed structured lessons to strengthen conceptual understanding in robotics.",
+        "Achieved top positions at inter-college robotics events."
+      ],
+      "tags": ["Robotics", "Leadership", "Embedded Systems"]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Autonomous Agriculture Drone",
+      "description": "Designed and developed an autonomous drone system for precision agriculture — path planning, obstacle avoidance, and crop health monitoring using image processing.",
+      "tags": ["Robotics", "Python", "Image Processing", "Drone"],
+      "image": "",
+      "github": "https://github.com/ayush8-agh",
+      "demo": "",
+      "featured": true
+    },
+    {
+      "title": "Self-Balancing Robot",
+      "description": "Autonomous self-balancing bot implementing PID control, image processing, and CoppeliaSim simulation, targeting Industry 4.0 applications. Developed for E-Yantra 2024.",
+      "tags": ["Python", "PID Control", "CoppeliaSim", "Embedded"],
+      "image": "",
+      "github": "https://github.com/ayush8-agh",
+      "demo": "",
+      "featured": true
+    },
+    {
+      "title": "Comparative Static Structural Analysis of Truss Bridges",
+      "description": "FEA-based structural analysis comparing multiple truss bridge configurations under static loading. Stress distribution, deformation patterns, and factor of safety analyzed using ABAQUS.",
+      "tags": ["FEA", "ABAQUS", "SolidWorks", "Structural Analysis"],
+      "image": "",
+      "github": "",
+      "demo": "",
+      "featured": true
+    },
+    {
+      "title": "Modal Frequency Analysis of Composite Shell",
+      "description": "Modal analysis of composite shell structures under various boundary conditions. Identified natural frequencies and mode shapes to validate theoretical models.",
+      "tags": ["FEA", "ABAQUS", "Composite Materials", "Vibration Analysis"],
+      "image": "",
+      "github": "",
+      "demo": "",
+      "featured": false
+    },
+    {
+      "title": "Smart Autonomous Street Light System",
+      "description": "IoT-based street lighting system with motion detection and adaptive brightness control. Reduces energy consumption by 60% compared to conventional systems.",
+      "tags": ["IoT", "Raspberry Pi", "Python", "Electronics"],
+      "image": "",
+      "github": "https://github.com/ayush8-agh",
+      "demo": "",
+      "featured": false
+    }
+  ],
+
+  "skills": {
+    "engineeringTools": [
+      { "name": "SolidWorks", "level": 90 },
+      { "name": "Autodesk Fusion 360", "level": 88 },
+      { "name": "ABAQUS / FEA", "level": 80 },
+      { "name": "MATLAB", "level": 82 },
+      { "name": "CoppeliaSim", "level": 75 },
+      { "name": "AutoCAD", "level": 78 }
+    ],
+    "programmingLanguages": [
+      { "name": "Python", "level": 85 },
+      { "name": "MATLAB", "level": 80 },
+      { "name": "C/C++", "level": 65 },
+      { "name": "JavaScript", "level": 60 }
+    ],
+    "devTools": [
+      { "name": "Raspberry Pi", "level": 78 },
+      { "name": "Arduino", "level": 80 },
+      { "name": "ROS (Robot OS)", "level": 60 },
+      { "name": "Git / GitHub", "level": 72 },
+      { "name": "Linux", "level": 68 }
+    ]
+  },
+
+  "resume": {
+    "link": "https://drive.google.com/",
+    "label": "Download Resume"
+  },
+
+  "links": [
+    {
+      "title": "GitHub Profile",
+      "url": "https://github.com/ayush8-agh",
+      "description": "My open-source projects and code repositories"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ayushtrivedi26/",
+      "description": "Professional profile and connections"
+    }
+  ],
+
+  "contact": {
+    "email": "ayushtrivedi262005@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ayushtrivedi26/",
+    "github": "https://github.com/ayush8-agh"
+  },
+
+  "adminPassword": "ayush2005"
+}

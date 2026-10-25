@@ -1,0 +1,12 @@
+{
+  "name": "ayush-trivedi-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Ayush Trivedi — Robotics Engineer & Mechanical Designer",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
