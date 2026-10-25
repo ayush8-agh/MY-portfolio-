@@ -1,7 +1,6 @@
 {
-  "version": 2,
+  "cleanUrls": true,
   "rewrites": [
-    { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/api/contact", "destination": "/netlify/functions/contact.js" }
+    { "source": "/admin", "destination": "/admin.html" }
   ]
 }
