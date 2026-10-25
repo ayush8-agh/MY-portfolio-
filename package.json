@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Portfolio of Ayush Trivedi — Robotics Engineer & Mechanical Designer",
   "scripts": {
-    "dev": "node server.js",
-    "serve": "node server.js"
+    "dev": "node dev-server.js",
+    "serve": "node dev-server.js"
   },
   "engines": {
     "node": ">=18"

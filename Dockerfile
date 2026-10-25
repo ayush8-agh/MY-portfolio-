@@ -5,11 +5,12 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Copy package and server files
-COPY package.json server.js ./
+COPY package.json dev-server.js ./
 COPY css/ ./css/
 COPY data/ ./data/
 COPY js/ ./js/
 COPY netlify/ ./netlify/
+COPY api/ ./api/
 COPY index.html admin.html profile_avatar.png robot_hero.png ./
 
 # Expose default port
@@ -20,4 +21,4 @@ ENV NODE_ENV=production
 ENV PORT=3000
 
 # Start server
-CMD ["node", "server.js"]
+CMD ["node", "dev-server.js"]
