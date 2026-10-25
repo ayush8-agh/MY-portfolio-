@@ -21,9 +21,18 @@ async function loadData() {
   try {
     const res = await fetch('data/data.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('Could not load data.json');
-    return await res.json();
+    const remoteData = await res.json();
+    const local = localStorage.getItem('ayush_portfolio_data');
+    if (local) {
+      try { return JSON.parse(local); } catch(e) {}
+    }
+    return remoteData;
   } catch (e) {
     console.error('Data load error:', e);
+    const local = localStorage.getItem('ayush_portfolio_data');
+    if (local) {
+      try { return JSON.parse(local); } catch(e2) {}
+    }
     return null;
   }
 }

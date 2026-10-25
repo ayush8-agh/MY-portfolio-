@@ -50,6 +50,7 @@ document.querySelectorAll('.admin-tab').forEach(btn => {
     btn.classList.add('active');
     document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
     if (btn.dataset.tab === 'personal') populatePersonalForm();
+    if (btn.dataset.tab === 'export') initGhInputs();
   });
 });
 
@@ -60,6 +61,7 @@ function renderAllAdmin() {
   renderEducationList();
   renderCertsList();
   renderSkillsAdmin();
+  initGhInputs();
 }
 
 function saveData() {
@@ -384,7 +386,102 @@ function savePersonal() {
   alert('✅ Personal info saved! Export JSON to apply changes.');
 }
 
-// ─── EXPORT ───────────────────────────────────────────────────
+// ─── EXPORT & GITHUB PUBLISH ──────────────────────────────────
+const GH_TOKEN_KEY = 'ayush_gh_token';
+const GH_REPO_KEY = 'ayush_gh_repo';
+
+function initGhInputs() {
+  const tokenInput = document.getElementById('gh-token');
+  const repoInput = document.getElementById('gh-repo');
+  if (tokenInput && localStorage.getItem(GH_TOKEN_KEY)) {
+    tokenInput.value = localStorage.getItem(GH_TOKEN_KEY);
+  }
+  if (repoInput && localStorage.getItem(GH_REPO_KEY)) {
+    repoInput.value = localStorage.getItem(GH_REPO_KEY);
+  }
+}
+
+async function publishToGithub() {
+  const tokenInput = document.getElementById('gh-token');
+  const repoInput = document.getElementById('gh-repo');
+  const statusEl = document.getElementById('gh-publish-status');
+  const btn = document.getElementById('gh-publish-btn');
+
+  const token = tokenInput.value.trim();
+  const repo = repoInput.value.trim() || 'portfolio';
+  const owner = 'ayush8-agh';
+
+  if (!token) {
+    statusEl.style.display = 'block';
+    statusEl.style.color = '#ff6b6b';
+    statusEl.textContent = '❌ Please enter your GitHub Personal Access Token first.';
+    return;
+  }
+
+  localStorage.setItem(GH_TOKEN_KEY, token);
+  localStorage.setItem(GH_REPO_KEY, repo);
+
+  btn.disabled = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Publishing to GitHub...';
+  statusEl.style.display = 'block';
+  statusEl.style.color = 'var(--accent-cyan)';
+  statusEl.textContent = 'Connecting to GitHub API...';
+
+  try {
+    const jsonString = JSON.stringify(portfolioData, null, 2);
+    const contentEncoded = btoa(unescape(encodeURIComponent(jsonString)));
+
+    // 1. Get current file sha from GitHub
+    const getRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/data/data.json`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    let sha = null;
+    if (getRes.ok) {
+      const existing = await getRes.json();
+      sha = existing.sha;
+    }
+
+    // 2. Commit update
+    const putRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/data/data.json`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: 'chore(cms): update portfolio content via Admin Panel',
+        content: contentEncoded,
+        ...(sha ? { sha } : {})
+      })
+    });
+
+    if (!putRes.ok) {
+      const errData = await putRes.json().catch(() => ({}));
+      throw new Error(errData.message || `GitHub error: HTTP ${putRes.status}`);
+    }
+
+    statusEl.style.color = 'var(--accent-green)';
+    statusEl.innerHTML = `✅ <strong>Published successfully to GitHub!</strong> Netlify is now rebuilding and your live site will reflect your changes in ~30 seconds.`;
+  } catch (err) {
+    statusEl.style.color = '#ff6b6b';
+    statusEl.textContent = `❌ ${err.message}. Alternatively, use the Download data.json option below.`;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="fas fa-rocket"></i> Publish Live to GitHub &amp; Netlify';
+  }
+}
+
+function resetToLive() {
+  if (!confirm('Discard all local draft changes and reset to live published data?')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  location.reload();
+}
+
 function generateExport() {
   const json = JSON.stringify(portfolioData, null, 2);
   const preview = document.getElementById('export-preview');
