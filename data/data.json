@@ -1,71 +1,57 @@
 {
   "personal": {
     "name": "Ayush Trivedi",
-    "tagline": "Mechanical Engineer & Robotics Enthusiast",
+    "tagline": "Final-year Mechanical Engineering student",
     "roles": [
-      "Robotics Engineer",
-      "CAD Designer",
-      "FEA Analyst",
-      "Python Developer",
-      "Automation Engineer"
+      "CAD and FEA",
+      "Python and machine learning",
+      "robotics projects"
     ],
-    "bio": "Passionate Mechanical Engineer with hands-on experience in CAD design, FEA simulation, robotics development, and manufacturing. Proficient in SolidWorks, Fusion 360, ABAQUS, and MATLAB, with projects spanning autonomous systems, smart devices, and robotic platforms. Currently exploring autonomous robotics, advanced simulation, and AI-driven mechanical systems.",
-    "phone": "+91 XXXXXXXXXX",
+    "bio": "I’m a final-year Mechanical Engineering student. Most of what I’ve built so far is CAD, simulation and robotics work, and I’m now applying the same habits to data analysis and machine learning in Python. I’m looking for internships and entry-level roles in data analytics and data science.",
     "email": "ayushtrivedi262005@gmail.com",
-    "city": "India",
+    "city": "Punjab, India",
     "github": "https://github.com/ayush8-agh",
     "linkedin": "https://www.linkedin.com/in/ayushtrivedi26/",
-    "avatar": "profile_avatar.png"
+    "avatar": "images/ayush.jpg"
   },
-
   "education": [
     {
-      "degree": "B.E. in Mechanical Engineering",
-      "institution": "Your University",
+      "degree": "Bachelor’s in Mechanical Engineering",
+      "institution": "Your university name",
       "duration": "2022 – Present",
       "coursework": [
-        "CAD Design (SolidWorks, Fusion 360)",
-        "Finite Element Analysis (FEA / ABAQUS)",
-        "MATLAB Programming for Industry 4.0",
-        "Robotics & Automation Systems",
-        "Thermodynamics & Fluid Mechanics"
-      ]
-    },
-    {
-      "degree": "Secondary & Higher Secondary",
-      "institution": "Your School",
-      "duration": "2019 – 2021",
-      "coursework": [
-        "Physics, Chemistry, Mathematics",
-        "Computer Science"
+        "CAD (SolidWorks, Fusion 360)",
+        "Finite element analysis (ABAQUS)",
+        "MATLAB programming",
+        "Robotics and automation",
+        "Thermodynamics and fluid mechanics"
       ]
     }
   ],
-
   "certifications": [
     {
       "title": "Multi-Axis CNC Toolpaths",
-      "issuer": "Coursera / Autodesk",
+      "issuer": "Coursera, Autodesk",
       "link": ""
     },
     {
       "title": "Modeling & Design with Autodesk Fusion 360",
-      "issuer": "Coursera / Autodesk",
+      "issuer": "Coursera, Autodesk",
       "link": ""
     },
     {
       "title": "CAM and Design Manufacturing with Fusion 360",
-      "issuer": "Coursera / Autodesk",
+      "issuer": "Coursera, Autodesk",
       "link": ""
     },
     {
       "title": "Simulation Analysis with Autodesk Fusion 360",
-      "issuer": "Coursera / Autodesk",
+      "issuer": "Coursera, Autodesk",
       "link": ""
     },
     {
       "title": "Introduction to Mechanical Engineering Design",
-      "issuer": "Coursera / Autodesk",
+      "issuer": "Coursera, Autodesk",
       "link": ""
     },
     {
@@ -80,12 +66,72 @@
     },
     {
       "title": "Robotics: Aerial Robotics",
-      "issuer": "Coursera / UPenn",
+      "issuer": "Coursera, UPenn",
       "link": ""
     }
   ],
-
   "experience": [
+    {
+      "company": "Smart India Hackathon 2026",
+      "role": "Team member, hardware track",
+      "duration": "Sep 2026",
+      "logo": "",
+      "certificate": "",
+      "description": [
+        "Problem statement: a mobile (quadruped) or handheld system to detect narcotics and explosives across Indian Railways.",
+        "Worked on the research and a simulated prototype for the proposal."
+      ],
+      "tags": [
+        "Research",
+        "Simulation",
+        "Hardware"
+      ]
+    },
+    {
+      "company": "Prernagati",
+      "role": "CAD/CAM trainee",
+      "duration": "Jun – Jul 2026",
+      "logo": "",
+      "certificate": "",
+      "description": [
+        "One-month CAD/CAM training."
+      ],
+      "tags": [
+        "CAD",
+        "CAM"
+      ]
+    },
+    {
+      "company": "CNC and forging plant, Punjab",
+      "role": "Industrial trainee",
+      "duration": "1 month",
+      "logo": "",
+      "certificate": "",
+      "description": [
+        "Read production and forging drawings and did in-process inspection with vernier calipers, using limits, fits and tolerances.",
+        "Learned how the plant tracks quality, cost and delivery (QCD), 5S, Poka-Yoke and traceability.",
+        "Worked with CNC lathe and VMC G-code and M-code programming."
+      ],
+      "tags": [
+        "CNC",
+        "Quality inspection",
+        "G-code"
+      ]
+    },
+    {
+      "company": "IIC SLIET Longowal",
+      "role": "3D printing trainee",
+      "duration": "Jun 2025",
+      "logo": "",
+      "certificate": "",
+      "description": [
+        "Two-week training in 3D printing and additive manufacturing."
+      ],
+      "tags": [
+        "3D printing",
+        "Additive manufacturing"
+      ]
+    },
     {
       "company": "E-Yantra 2024",
       "role": "Python Developer",
@@ -97,7 +143,12 @@
         "Implemented image processing pipelines and ran simulations on CoppeliaSim.",
         "Deployed and tested the system on Linux environment."
       ],
-      "tags": ["Python", "Robotics", "CoppeliaSim", "Image Processing"]
+      "tags": [
+        "Python",
+        "Robotics",
+        "CoppeliaSim",
+        "Image Processing"
+      ]
     },
     {
       "company": "Smart India Hackathon 2023",
@@ -110,7 +161,12 @@
         "Designed the product enclosure using CAD software.",
         "Integrated circuit design for amalgamating multiple IoT devices."
       ],
-      "tags": ["CAD", "IoT", "Circuit Design", "SolidWorks"]
+      "tags": [
+        "CAD",
+        "IoT",
+        "Circuit Design",
+        "SolidWorks"
+      ]
     },
     {
       "company": "Robotics Team / Club",
@@ -123,15 +179,36 @@
         "Developed structured lessons to strengthen conceptual understanding in robotics.",
         "Achieved top positions at inter-college robotics events."
       ],
-      "tags": ["Robotics", "Leadership", "Embedded Systems"]
+      "tags": [
+        "Robotics",
+        "Leadership",
+        "Embedded Systems"
+      ]
     }
   ],
-
   "projects": [
+    {
+      "title": "Morphing hopping rover for Martian terrain",
+      "description": "Final-year project with a team of three, inspired by HopTo’s Hopcopter. A squeeze-and-anchor mechanism lets the rover contract and hold position during dust storms. An Earth-scale prototype is planned. In progress.",
+      "tags": [
+        "Robotics",
+        "CAD",
+        "Mechanism design"
+      ],
+      "image": "",
+      "github": "",
+      "demo": "",
+      "featured": true
+    },
     {
       "title": "Autonomous Agriculture Drone",
       "description": "Designed and developed an autonomous drone system for precision agriculture — path planning, obstacle avoidance, and crop health monitoring using image processing.",
-      "tags": ["Robotics", "Python", "Image Processing", "Drone"],
+      "tags": [
+        "Robotics",
+        "Python",
+        "Image Processing",
+        "Drone"
+      ],
       "image": "",
       "github": "https://github.com/ayush8-agh",
       "demo": "",
@@ -140,7 +217,12 @@
     {
       "title": "Self-Balancing Robot",
       "description": "Autonomous self-balancing bot implementing PID control, image processing, and CoppeliaSim simulation, targeting Industry 4.0 applications. Developed for E-Yantra 2024.",
-      "tags": ["Python", "PID Control", "CoppeliaSim", "Embedded"],
+      "tags": [
+        "Python",
+        "PID Control",
+        "CoppeliaSim",
+        "Embedded"
+      ],
       "image": "",
       "github": "https://github.com/ayush8-agh",
       "demo": "",
@@ -149,7 +231,12 @@
     {
       "title": "Comparative Static Structural Analysis of Truss Bridges",
       "description": "FEA-based structural analysis comparing multiple truss bridge configurations under static loading. Stress distribution, deformation patterns, and factor of safety analyzed using ABAQUS.",
-      "tags": ["FEA", "ABAQUS", "SolidWorks", "Structural Analysis"],
+      "tags": [
+        "FEA",
+        "ABAQUS",
+        "SolidWorks",
+        "Structural Analysis"
+      ],
       "image": "",
       "github": "",
       "demo": "",
@@ -158,7 +245,12 @@
     {
       "title": "Modal Frequency Analysis of Composite Shell",
       "description": "Modal analysis of composite shell structures under various boundary conditions. Identified natural frequencies and mode shapes to validate theoretical models.",
-      "tags": ["FEA", "ABAQUS", "Composite Materials", "Vibration Analysis"],
+      "tags": [
+        "FEA",
+        "ABAQUS",
+        "Composite Materials",
+        "Vibration Analysis"
+      ],
       "image": "",
       "github": "",
       "demo": "",
@@ -166,44 +258,103 @@
     },
     {
       "title": "Smart Autonomous Street Light System",
-      "description": "IoT-based street lighting system with motion detection and adaptive brightness control. Reduces energy consumption by 60% compared to conventional systems.",
-      "tags": ["IoT", "Raspberry Pi", "Python", "Electronics"],
+      "description": "IoT-based street lighting system with motion detection and adaptive brightness control.",
+      "tags": [
+        "IoT",
+        "Raspberry Pi",
+        "Python",
+        "Electronics"
+      ],
       "image": "",
       "github": "https://github.com/ayush8-agh",
       "demo": "",
       "featured": false
     }
   ],
-
   "skills": {
     "engineeringTools": [
-      { "name": "SolidWorks", "level": 90 },
-      { "name": "Autodesk Fusion 360", "level": 88 },
-      { "name": "ABAQUS / FEA", "level": 80 },
-      { "name": "MATLAB", "level": 82 },
-      { "name": "CoppeliaSim", "level": 75 },
-      { "name": "AutoCAD", "level": 78 }
+      {
+        "name": "SolidWorks",
+        "level": 90
+      },
+      {
+        "name": "Fusion 360",
+        "level": 88
+      },
+      {
+        "name": "ABAQUS",
+        "level": 80
+      },
+      {
+        "name": "ANSYS",
+        "level": 65
+      },
+      {
+        "name": "AutoCAD",
+        "level": 78
+      },
+      {
+        "name": "MATLAB",
+        "level": 82
+      },
+      {
+        "name": "CoppeliaSim",
+        "level": 75
+      }
     ],
     "programmingLanguages": [
-      { "name": "Python", "level": 85 },
-      { "name": "MATLAB", "level": 80 },
-      { "name": "C/C++", "level": 65 },
-      { "name": "JavaScript", "level": 60 }
+      {
+        "name": "Python",
+        "level": 85
+      },
+      {
+        "name": "scikit-learn",
+        "level": 65
+      },
+      {
+        "name": "TensorFlow",
+        "level": 65
+      },
+      {
+        "name": "YOLOv8",
+        "level": 65
+      },
+      {
+        "name": "C/C++",
+        "level": 65
+      },
+      {
+        "name": "JavaScript",
+        "level": 60
+      }
     ],
     "devTools": [
-      { "name": "Raspberry Pi", "level": 78 },
-      { "name": "Arduino", "level": 80 },
-      { "name": "ROS (Robot OS)", "level": 60 },
-      { "name": "Git / GitHub", "level": 72 },
-      { "name": "Linux", "level": 68 }
+      {
+        "name": "Raspberry Pi",
+        "level": 78
+      },
+      {
+        "name": "Arduino",
+        "level": 80
+      },
+      {
+        "name": "ROS",
+        "level": 60
+      },
+      {
+        "name": "Git and GitHub",
+        "level": 72
+      },
+      {
+        "name": "Linux",
+        "level": 68
+      }
     ]
   },
-
   "resume": {
-    "link": "https://drive.google.com/",
-    "label": "Download Resume"
+    "link": "Ayush_Trivedi_Resume.pdf",
+    "label": "Download resume"
   },
-
   "links": [
     {
       "title": "GitHub Profile",
@@ -216,12 +367,10 @@
       "description": "Professional profile and connections"
     }
   ],
-
   "contact": {
     "email": "ayushtrivedi262005@gmail.com",
     "linkedin": "https://www.linkedin.com/in/ayushtrivedi26/",
     "github": "https://github.com/ayush8-agh"
   },
-
-  "adminPassword": "ayush2005"
+  "adminPassword": "Portfolio@Ayush2026"
 }

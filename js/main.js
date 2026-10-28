@@ -72,7 +72,7 @@ function renderHero(data) {
     `;
   }
 
-  window._roles = p.roles || ['Robotics Engineer'];
+  window._roles = p.roles || ['CAD and FEA'];
 }
 
 function renderAbout(data) {
@@ -82,7 +82,7 @@ function renderAbout(data) {
 
   const photoEl = document.getElementById('about-photo');
   if (photoEl && p.avatar) {
-    photoEl.outerHTML = `<img src="${escapeHtml(p.avatar)}" alt="${escapeHtml(p.name)}" class="about-photo" id="about-photo" />`;
+    photoEl.outerHTML = `<img src="${escapeHtml(p.avatar)}" alt="${escapeHtml(p.name)}" class="about-photo" id="about-photo" onerror="this.closest('.about-photo-wrap').style.display='none'" />`;
   }
 
   const infoList = document.getElementById('about-info-list');
@@ -92,7 +92,6 @@ function renderAbout(data) {
       { label: 'City', value: escapeHtml(p.city) },
       { label: 'GitHub', value: `<a href="${escapeHtml(p.github)}" target="_blank" rel="noopener">${escapeHtml(hostFromUrl(p.github))}</a>` },
       { label: 'LinkedIn', value: `<a href="${escapeHtml(p.linkedin)}" target="_blank" rel="noopener">${escapeHtml(hostFromUrl(p.linkedin))}</a>` },
-      { label: 'Phone', value: escapeHtml(p.phone) },
       { label: 'Available', value: 'Open to opportunities' },
     ];
     infoList.innerHTML = items.map(it => `
@@ -362,7 +361,6 @@ function renderContact(data) {
       <a href="${escapeHtml(github)}" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
       <a href="${escapeHtml(linkedin)}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:${escapeHtml(email)}"><i class="fas fa-envelope"></i></a>
-      <a href="admin.html">Admin</a>
     `;
   }
 }

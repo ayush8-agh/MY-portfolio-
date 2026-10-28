@@ -1,0 +1,29 @@
+/* extra.css: motion + depth layer on top of style.css (delete this file to go back) */
+#progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:10000;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,#00d4ff,#7c3aed,#ff6b2b)}
+.grain{position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.aurora{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+.aurora i{position:absolute;width:46vw;height:46vw;max-width:620px;max-height:620px;border-radius:50%;filter:blur(90px);opacity:.28;animation:drift 18s ease-in-out infinite alternate}
+.aurora i:nth-child(1){background:#00d4ff;top:-10%;left:-8%}
+.aurora i:nth-child(2){background:#7c3aed;top:20%;right:-10%;animation-duration:23s}
+.aurora i:nth-child(3){background:#ff6b2b;bottom:-20%;left:35%;opacity:.16;animation-duration:27s}
+@keyframes drift{to{transform:translate(60px,-40px) scale(1.15)}}
+.hero-visual{transition:transform .25s ease-out;transform-style:preserve-3d}
+.hero-name .accent{text-shadow:0 0 28px rgba(0,212,255,.55);animation:namepulse 4s ease-in-out infinite}
+@keyframes namepulse{50%{text-shadow:0 0 46px rgba(0,212,255,.9),0 0 90px rgba(124,58,237,.35)}}
+.section-title{position:relative}
+.section-title::after{content:'';display:block;width:0;height:3px;margin-top:14px;border-radius:2px;background:linear-gradient(90deg,#00d4ff,#ff6b2b);transition:width .9s cubic-bezier(.2,.8,.2,1) .25s}
+.section-title.visible::after{width:72px}
+.project-card,.exp-card,.edu-card,.cert-card,.skill-category,.link-card,.glass-card,.stat-item{position:relative;overflow:hidden;backdrop-filter:blur(10px)}
+.spot-glow{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(0,212,255,.16),transparent 45%)}
+.project-card:hover .spot-glow,.exp-card:hover .spot-glow,.edu-card:hover .spot-glow,.cert-card:hover .spot-glow,.skill-category:hover .spot-glow,.link-card:hover .spot-glow,.glass-card:hover .spot-glow,.stat-item:hover .spot-glow{opacity:1}
+.project-card:hover{border-color:rgba(0,212,255,.5);box-shadow:0 24px 60px -24px rgba(0,212,255,.45)}
+.project-card .project-img-wrap{background:radial-gradient(circle at 18% 22%,rgba(0,212,255,.3),transparent 55%),radial-gradient(circle at 82% 78%,rgba(255,107,43,.24),transparent 55%),#0a1a2e}
+.exp-dot,.edu-dot{animation:ring 2.6s ease-out infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(0,212,255,.55)}100%{box-shadow:0 0 0 14px rgba(0,212,255,0)}}
+.marquee{position:relative;z-index:3;overflow:hidden;padding:18px 0;border-block:1px solid var(--border-dim);background:rgba(8,21,37,.55);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:marq 45s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{display:inline-flex;align-items:center;gap:48px;white-space:nowrap;font-family:var(--font-mono);font-size:.95rem;color:var(--text-secondary)}
+.marquee span::after{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent-orange)}
+@keyframes marq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.aurora i,.marquee-track,.exp-dot,.edu-dot,.hero-name .accent{animation:none}.hero-visual{transition:none}}
